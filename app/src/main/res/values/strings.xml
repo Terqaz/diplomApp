@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DDZ1</string>
+    <string name="work_experience">Опыт работы:</string>
+    <string name="services">Услуги:</string>
+    <string name="doctors">Врачи</string>
+    <string name="at_main">На главную</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="make_appointment">Записаться на прием</string>
+    <string name="info">Инфо</string>
+    <string name="child_practice">«Детская практика»</string>
+    <string name="empty">Пусто</string>
+</resources>
