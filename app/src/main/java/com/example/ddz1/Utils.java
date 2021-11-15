@@ -7,7 +7,7 @@ import android.util.Base64;
 public class Utils {
 
     public static boolean isNullOrEmptyString(String s) {
-        return s == null || s.isEmpty();
+        return s == null || s.isEmpty() || s.equals("-1");
     }
 
     public static Bitmap decodeBase64(String photo) {

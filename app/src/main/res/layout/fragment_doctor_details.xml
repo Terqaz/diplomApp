@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DoctorDetailsFragment"
-    android:orientation="vertical"
-    android:padding="8dp"
-    android:background="@color/light_grey">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".DoctorDetailsFragment"
         android:orientation="vertical"
         android:background="@color/white"
@@ -42,42 +38,44 @@
             android:layout_marginTop="8dp"
             android:textColor="@color/black"
             android:textSize="18sp"
+            android:textStyle="bold"
             android:text="Специальность"
             />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/appointmentMakeBtn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/make_appointment"
+            android:layout_height="45dp"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/cyan"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@drawable/button1"
+            android:textColor="@color/white"
+            android:text="@string/make_appointment"
             android:textSize="17sp"
+            android:layout_marginTop="8dp"
             android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"/>
+            android:paddingEnd="20dp"/>
 
         <TextView
             android:id="@+id/workExperienceDescriptionHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/work_experience"
+            android:layout_marginTop="30dp"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:visibility="gone"/>
+            android:visibility="visible"
+            android:text="@string/work_experience"
+            />
 
         <TextView
             android:id="@+id/workExperienceDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            android:text="@string/empty"
+            android:text="@string/no_information"
             android:textSize="15sp"
-            android:textColor="@color/dark_grey"
-            android:visibility="gone"/>
+            android:textColor="@color/black"
+            android:visibility="visible"/>
 
         <TextView
             android:id="@+id/servicesDescriptionHeader"
@@ -87,18 +85,16 @@
             android:text="@string/services"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:visibility="gone"/>
+            android:visibility="visible"/>
 
         <TextView
             android:id="@+id/servicesDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            android:text="@string/empty"
+            android:text="@string/no_information"
             android:textSize="15sp"
             android:textColor="@color/dark_grey"
-            android:visibility="gone"/>
+            android:visibility="visible"/>
     </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -59,7 +59,7 @@ public class DoctorDetailsFragment extends Fragment {
             specialty.setVisibility(View.VISIBLE);
         }
         if (!Utils.isNullOrEmptyString(doctor.getDesc())) {
-            workExperienceDescription.setText(doctor.getSpecialization());
+            workExperienceDescription.setText(doctor.getDesc());
 
             view.<TextView>findViewById(R.id.workExperienceDescriptionHeader).setVisibility(View.VISIBLE);
             workExperienceDescription.setVisibility(View.VISIBLE);

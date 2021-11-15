@@ -8,5 +8,5 @@
     <string name="make_appointment">Записаться на прием</string>
     <string name="info">Инфо</string>
     <string name="child_practice">«Детская практика»</string>
-    <string name="empty">Пусто</string>
+    <string name="no_information">Нет информации</string>
 </resources>
